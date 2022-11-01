@@ -52,7 +52,7 @@
     <?php unset($bookmark); ?>
 </table>
 
-<?php echo $this->Html->link(
-    'Add Bookmark',
-    array('controller' => 'bookmarks', 'action' => 'add')
-); ?>
+<?php //echo $this->Html->link(
+//    'Add Bookmark',
+//    array('controller' => 'bookmarks', 'action' => 'add')
+//); ?>
