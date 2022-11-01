@@ -10,3 +10,8 @@ open-bookmarks:
 
 open-phpliteadmin:
 	xdg-open http://localhost/admins/phpliteadmin/phpliteadmin.php
+
+cakephp-docs:
+	xdg-open https://book.cakephp.org/2/en/models/retrieving-your-data.html
+	# https://book.cakephp.org/2/en/getting-started.html
+

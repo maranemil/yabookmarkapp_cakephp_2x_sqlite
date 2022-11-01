@@ -92,3 +92,50 @@ Stack Trace:
 #10 /var/www/html/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #11 /var/www/html/index.php(41): require('/var/www/html/a...')
 #12 {main}
+2022-10-31 20:59:26 Error: [Error] Call to a member function find() on null
+Request URL: /index.php/bookmarks
+Stack Trace:
+#0 [internal function]: BookmarksController->index()
+#1 /var/www/html/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(BookmarksController), Array)
+#2 /var/www/html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BookmarksController), Object(CakeRequest))
+#4 /var/www/html/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/html/index.php(41): require('/var/www/html/a...')
+#6 {main}
+2022-10-31 21:35:39 Error: [MissingActionException] Action BookmarksController::display() could not be found.
+Exception Attributes: array (
+  'controller' => 'BookmarksController',
+  'action' => 'display',
+)
+Request URL: /index.php/
+Stack Trace:
+#0 /var/www/html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BookmarksController), Object(CakeRequest))
+#2 /var/www/html/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 /var/www/html/index.php(41): require('/var/www/html/a...')
+#4 {main}
+2022-10-31 21:35:42 Error: [MissingActionException] Action BookmarksController::display() could not be found.
+Exception Attributes: array (
+  'controller' => 'BookmarksController',
+  'action' => 'display',
+)
+Request URL: /index.php/
+Stack Trace:
+#0 /var/www/html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BookmarksController), Object(CakeRequest))
+#2 /var/www/html/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 /var/www/html/index.php(41): require('/var/www/html/a...')
+#4 {main}
+2022-10-31 21:36:20 Error: [MissingViewException] View file "Bookmarks/display.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Bookmarks/display.ctp',
+)
+Request URL: /index.php/
+Stack Trace:
+#0 /var/www/html/lib/Cake/View/View.php(470): View->_getViewFileName('Bookmarks/displ...')
+#1 /var/www/html/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#2 /var/www/html/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BookmarksController), Object(CakeRequest))
+#4 /var/www/html/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/html/index.php(41): require('/var/www/html/a...')
+#6 {main}
